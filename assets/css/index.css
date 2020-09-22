@@ -1,0 +1,87 @@
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 30px 150px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header > nav {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    text-align: center;
+    color: hsl(273, 4%, 51%);
+    padding: 10px 0;
+}
+
+header > nav > a:hover {
+    color: hsl(256, 26%, 20%);
+}
+
+.view-plans-link {
+    border: 1px solid  hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+a.view-plans-link:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+}
+
+.icon-hamburger-picture {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .icon-logo-picture {
+        margin-right: auto;
+    }
+
+    .icon-hamburger-picture {
+        display: unset;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header > nav {
+        margin-top: 20px;
+        flex-direction: column;
+        margin-left: unset;
+        width: 100%;
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(256, 26%, 20%);
+    }
+
+    header > nav > a {
+        color: hsl(0, 0%, 98%);
+    }
+
+    body {
+        margin: 20px 25px;
+    }
+
+    .view-plans-link {
+        border: 1px solid  hsl(0, 0%, 98%);
+        box-sizing: border-box;
+        padding: 10px 15px;
+    }
+}

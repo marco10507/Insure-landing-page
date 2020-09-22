@@ -41,7 +41,7 @@ nav > a:hover {
     color: hsl(0, 0%, 98%);
 }
 
-.icon-hamburger-picture {
+.mobile-menu-button {
     display: none;
 }
 
@@ -51,8 +51,19 @@ nav > a:hover {
         margin-right: auto;
     }
 
-    .icon-hamburger-picture {
-        display: unset;
+    .mobile-menu-button {
+        display: inline;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-button.open {
+        background-image: url(../images/icon-hamburger.svg);
+    }
+
+    .mobile-menu-button.close {
+        background-image: url(../images/icon-close.svg);
     }
 
     .logo-container {
@@ -103,15 +114,20 @@ nav > a:hover {
         color: hsl(0, 0%, 98%);
     }
 
-    .nav-container {
-        margin-left: unset;
-    }
-
     .view-plans-link {
         padding: 20px 0;
     }
 
     .nav-container {
+        margin-left: 0;
+        display: none;
+    }
+
+    .nav-container.enable {
+        display: block;
+    }
+
+    .nav-container.disable {
         display: none;
     }
 }

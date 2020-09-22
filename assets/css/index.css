@@ -9,8 +9,9 @@ header {
     align-items: center;
 }
 
-.nav-container{
+.nav-container {
     margin-left: auto;
+    display: block;
 }
 
 .nav-container > nav {
@@ -43,6 +44,7 @@ nav > a:hover {
 .icon-hamburger-picture {
     display: none;
 }
+
 
 @media screen and (max-width: 800px) {
     .icon-logo-picture {
@@ -101,11 +103,15 @@ nav > a:hover {
         color: hsl(0, 0%, 98%);
     }
 
-    .nav-container{
+    .nav-container {
         margin-left: unset;
     }
 
     .view-plans-link {
         padding: 20px 0;
+    }
+
+    .nav-container {
+        display: none;
     }
 }

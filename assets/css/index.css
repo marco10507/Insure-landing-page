@@ -45,6 +45,36 @@ nav > a:hover {
     display: none;
 }
 
+.image-intro-desktop{
+    background-image: url("../images/image-intro-desktop.jpg");
+    height: 650px;
+    width: 540px;
+    float: right;
+}
+
+.business-vision-container{
+    margin-top: 30px;
+}
+
+.business-vision-container {
+    background-color: hsl(256, 26%, 20%);
+    padding: 90px 0;
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+}
+
+.separator {
+    border-top: 1px solid hsl(273, 4%, 51%);
+    width: 140px;
+}
+
+.image-intro-desktop {
+    margin-left: 20px;
+}
+
+section.business-vision {
+    margin: 0 150px;
+}
 
 @media screen and (max-width: 800px) {
     .icon-logo-picture {

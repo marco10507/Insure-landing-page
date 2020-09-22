@@ -9,27 +9,30 @@ header {
     align-items: center;
 }
 
-header > nav {
+.nav-container{
     margin-left: auto;
+}
+
+.nav-container > nav {
     display: flex;
     gap: 30px;
 }
 
-header > nav > a {
+nav > a {
     text-decoration: none;
     text-align: center;
     color: hsl(273, 4%, 51%);
     padding: 10px 0;
 }
 
-header > nav > a:hover {
-    color: hsl(256, 26%, 20%);
-}
-
-.view-plans-link {
-    border: 1px solid  hsl(0, 0%, 98%);
+a.view-plans-link {
+    border: 1px solid hsl(256, 26%, 20%);
     box-sizing: border-box;
     padding: 10px 15px;
+}
+
+nav > a:hover {
+    color: hsl(256, 26%, 20%);
 }
 
 a.view-plans-link:hover {
@@ -60,18 +63,23 @@ a.view-plans-link:hover {
         flex-direction: column;
     }
 
-    header > nav {
-        margin-top: 20px;
+    .nav-container > nav {
         flex-direction: column;
-        margin-left: unset;
-        width: 100%;
-        background-image: url(../images/bg-pattern-mobile-nav.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: hsl(256, 26%, 20%);
+        margin: 30px 25px;
     }
 
-    header > nav > a {
+    .nav-container {
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right bottom;
+        background-color: hsl(256, 26%, 20%);
+        height: 100vh;
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    .nav-container > nav > a {
         color: hsl(0, 0%, 98%);
     }
 
@@ -80,8 +88,20 @@ a.view-plans-link:hover {
     }
 
     .view-plans-link {
-        border: 1px solid  hsl(0, 0%, 98%);
+        border: 1px solid hsl(0, 0%, 98%);
         box-sizing: border-box;
         padding: 10px 15px;
+    }
+
+    a.view-plans-link:hover {
+        background-color: unset;
+    }
+
+    .nav-container > nav > a:hover {
+        color: hsl(0, 0%, 98%);
+    }
+
+    .nav-container{
+        margin-left: unset;
     }
 }

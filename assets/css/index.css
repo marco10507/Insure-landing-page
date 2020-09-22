@@ -25,7 +25,7 @@ nav > a {
     padding: 10px 0;
 }
 
-a.view-plans-link {
+.view-plans-link {
     border: 1px solid hsl(256, 26%, 20%);
     box-sizing: border-box;
     padding: 10px 15px;
@@ -35,7 +35,7 @@ nav > a:hover {
     color: hsl(256, 26%, 20%);
 }
 
-a.view-plans-link:hover {
+.view-plans-link:hover {
     background-color: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
 }
@@ -93,7 +93,7 @@ a.view-plans-link:hover {
         padding: 10px 15px;
     }
 
-    a.view-plans-link:hover {
+    .view-plans-link:hover {
         background-color: unset;
     }
 
@@ -103,5 +103,9 @@ a.view-plans-link:hover {
 
     .nav-container{
         margin-left: unset;
+    }
+
+    .view-plans-link {
+        padding: 20px 0;
     }
 }

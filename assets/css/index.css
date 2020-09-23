@@ -30,10 +30,7 @@ nav > a {
     border: 1px solid hsl(256, 26%, 20%);
     box-sizing: border-box;
     padding: 10px 15px;
-}
-
-nav > a:hover {
-    color: hsl(256, 26%, 20%);
+    text-decoration: none;
 }
 
 .view-plans-link:hover {
@@ -41,24 +38,23 @@ nav > a:hover {
     color: hsl(0, 0%, 98%);
 }
 
+nav > a:hover {
+    color: hsl(256, 26%, 20%);
+}
+
 .mobile-menu-button {
     display: none;
 }
 
-.image-intro-desktop{
+.image-intro {
     background-image: url("../images/image-intro-desktop.jpg");
     height: 650px;
     width: 540px;
     float: right;
 }
 
-.business-vision-container{
-    margin-top: 30px;
-}
-
 .business-vision-container {
     background-color: hsl(256, 26%, 20%);
-    padding: 90px 0;
     margin-left: calc(50% - 50vw);
     width: 100vw;
 }
@@ -68,15 +64,55 @@ nav > a:hover {
     width: 140px;
 }
 
-.image-intro-desktop {
+.image-intro {
     margin-left: 20px;
 }
 
 section.business-vision {
-    margin: 0 150px;
+    margin: 25px 150px;
+    padding: 90px 0;
 }
 
-@media screen and (max-width: 800px) {
+img.bg-pattern-intro-right-desktop-image {
+    position: absolute;
+    right: 0;
+}
+
+.business-vision-details > .heading1 {
+    margin-top: 40px;
+}
+
+.business-vision-details {
+    color: hsl(0, 0%, 98%);
+}
+
+.business-vision-description {
+    margin: 20px 0 35px 0;
+}
+
+.heading1 {
+    font-size: 55px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.business-vision-details > a.view-plans-link {
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+}
+
+.business-vision-details > a.view-plans-link:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+@media screen and (max-width: 450px) {
+    .image-intro {
+        background-image: url("../images/image-intro-mobile.jpg");
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .icon-logo-picture {
         margin-right: auto;
     }
@@ -119,7 +155,6 @@ section.business-vision {
         background-color: hsl(256, 26%, 20%);
         height: 100vh;
         width: 100vw;
-        margin-top: 20px;
     }
 
     .nav-container > nav > a {
@@ -144,10 +179,6 @@ section.business-vision {
         color: hsl(0, 0%, 98%);
     }
 
-    .view-plans-link {
-        padding: 20px 0;
-    }
-
     .nav-container {
         margin-left: 0;
         display: none;
@@ -159,5 +190,38 @@ section.business-vision {
 
     .nav-container.disable {
         display: none;
+    }
+
+    .image-intro {
+        width: 100vw;
+        height: 100vh;
+        margin-left: calc(50% - 50vw);
+        float: none;
+        background-size: cover;
+    }
+
+    section.business-vision {
+         margin: 0 25px;
+         padding: 0 0;
+    }
+
+    .business-vision-details {
+        text-align: center;
+    }
+
+    .bg-pattern-intro-right-desktop-image{
+        display: none;
+    }
+
+    .spacer {
+        margin: 10px;
+    }
+
+    .business-vision-details > .heading1 {
+        margin-top: 80px;
+    }
+
+    .business-vision-details {
+        padding-bottom: 80px;
     }
 }

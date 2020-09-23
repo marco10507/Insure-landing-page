@@ -106,6 +106,15 @@ img.bg-pattern-intro-right-desktop-image {
     background-color: hsl(0, 0%, 98%);
 }
 
+img.bg-pattern-intro-left-desktop-image {
+    position: absolute;
+    top: 439px;
+}
+
+.bg-pattern-intro-left-mobile-image, .bg-pattern-intro-right-mobile-image {
+    display: none;
+}
+
 @media screen and (max-width: 450px) {
     .image-intro {
         background-image: url("../images/image-intro-mobile.jpg");
@@ -201,15 +210,15 @@ img.bg-pattern-intro-right-desktop-image {
     }
 
     section.business-vision {
-         margin: 0 25px;
-         padding: 0 0;
+        margin: 0 25px;
+        padding: 0 0;
     }
 
     .business-vision-details {
         text-align: center;
     }
 
-    .bg-pattern-intro-right-desktop-image{
+    .bg-pattern-intro-right-desktop-image {
         display: none;
     }
 
@@ -223,5 +232,21 @@ img.bg-pattern-intro-right-desktop-image {
 
     .business-vision-details {
         padding-bottom: 80px;
+    }
+
+    img.bg-pattern-intro-left-desktop-image {
+        display: none;
+    }
+
+    .bg-pattern-intro-left-mobile-image {
+        display: inline;
+        position: absolute;
+        left: 0;
+    }
+
+    .bg-pattern-intro-right-mobile-image {
+        display: inline;
+        position: absolute;
+        right: 0;
     }
 }

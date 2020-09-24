@@ -334,4 +334,20 @@ section.find-more-details > a.view-plans-link:hover {
     .business-promise-description .heading3 {
         margin: 35px 0 25px 0;
     }
+
+    section.find-more-details {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    section.find-more-details > .view-plans-link {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    section.find-more-details {
+        background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+        background-position: top right;
+    }
 }

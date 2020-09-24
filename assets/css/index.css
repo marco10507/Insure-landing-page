@@ -152,7 +152,6 @@ img.bg-pattern-intro-left-desktop-image {
 
 section.business-promise {
     margin-top: 350px;
-    margin-bottom: 140px;
 }
 
 section.find-more-details {
@@ -163,6 +162,7 @@ section.find-more-details {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-repeat: no-repeat;
     background-position: right;
+    margin: 135px 0;
 }
 
 section.find-more-details > .heading2, section.find-more-details > .view-plans-link {

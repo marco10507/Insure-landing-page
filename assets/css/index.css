@@ -179,6 +179,64 @@ section.find-more-details > a.view-plans-link:hover {
     background-color: hsl(0, 0%, 98%);
 }
 
+.footer-container {
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+}
+
+footer {
+    margin: 0 150px;
+    padding: 60px 0;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+}
+
+nav.social-media-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+nav.social-media-nav > a {
+    padding: 0;
+}
+
+footer .separator {
+    width: 100%;
+    margin: 60px 0;
+}
+
+footer nav {
+    display: flex;
+    gap: 150px;
+}
+
+.footer-menu-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-menu-block > a {
+    text-decoration: none;
+}
+
+.footer-menu-block > a:first-child {
+    color: hsl(273, 4%, 51%);
+    margin-bottom: 25px;
+}
+
+.footer-menu-block > a:not(:first-child) {
+    color: hsl(256, 26%, 20%);
+}
+
 @media screen and (max-width: 450px) {
     .image-intro {
         background-image: url("../images/image-intro-mobile.jpg");
@@ -349,5 +407,30 @@ section.find-more-details > a.view-plans-link:hover {
     section.find-more-details {
         background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
         background-position: top right;
+    }
+
+    footer {
+        margin: 0 25px;
+        padding: 60px 0;
+    }
+
+    .footer-header img.icon-logo-picture {
+        margin-right: 0;
+    }
+
+    .footer-header {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    nav.social-media-nav {
+        margin-left: 0;
+    }
+
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
     }
 }
